@@ -1,70 +1,72 @@
-﻿<!DOCTYPE html>  
-<html lang="en-US">  
-	<head>
-		<title>Search Tool</title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script>
-$(function(){
-$("#new_urls").fadeOut('fast');
-$("#button").click(function(){
-$("#new_urls").append("Below are Google Searches with your term PLUS the linked word below");
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=podcast+" + $("#url").val() + "\">Podcast</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=review+" + $("#url").val() + "\">Review</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=tutorial+" + $("#url").val() + "\">Tutorial</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=expert+" + $("#url").val() + "\">Expert</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=help+" + $("#url").val() + "\">Help</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=blog+" + $("#url").val() + "\">blog</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=conference+" + $("#url").val() + "\">conference</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=workshop+" + $("#url").val() + "\">workshop</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=class+" + $("#url").val() + "\">class</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=community+" + $("#url").val() + "\">community</a></p>").fadeIn('slow');
-$("#new_urls").append("Below are Youtube Searches with your term PLUS the linked word below");
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=podcast+" + $("#url").val() + "\">Podcast</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=review+" + $("#url").val() + "\">Review</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=tutorial+" + $("#url").val() + "\">Tutorial</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=expert+" + $("#url").val() + "\">Expert</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=help+" + $("#url").val() + "\">Help</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=blog+" + $("#url").val() + "\">blog</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=conference+" + $("#url").val() + "\">conference</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=workshop+" + $("#url").val() + "\">workshop</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=class+" + $("#url").val() + "\">class</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=community+" + $("#url").val() + "\">community</a></p>").fadeIn('slow');
-$("#new_urls").append("Below are Flickr CC Searches with your term PLUS the linked word below");
+﻿<!DOCTYPE html>
+<html lang="en-US">
 
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=podcast+" + $("#url").val() + "&l=4\">Podcast</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=review+" + $("#url").val() + "&l=4\">Review</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=tutorial+" + $("#url").val() + "&l=4\">Tutorial</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=expert+" + $("#url").val() + "&l=4\">Expert</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=help+" + $("#url").val() + "&l=4\">Help</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=blog+" + $("#url").val() + "&l=4\">blog</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=conference+" + $("#url").val() + "&l=4\">conference</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=workshop+" + $("#url").val() + "&l=4\">workshop</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=class+" + $("#url").val() + "&l=4\">class</a></p>").fadeIn('slow');
-$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=community+" + $("#url").val() + "&l=4\">community</a></p>").fadeIn('slow');
+<head>
+	<title>Search Tool</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script>
+		$(function () {
+			$("#new_urls").fadeOut('fast');
+			$("#button").click(function () {
+				$("#new_urls").append("Below are Google Searches with your term PLUS the linked word below");
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=podcast+" + $("#url").val() + "\">Podcast</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=review+" + $("#url").val() + "\">Review</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=tutorial+" + $("#url").val() + "\">Tutorial</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=expert+" + $("#url").val() + "\">Expert</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=help+" + $("#url").val() + "\">Help</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=blog+" + $("#url").val() + "\">blog</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=conference+" + $("#url").val() + "\">conference</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=workshop+" + $("#url").val() + "\">workshop</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=class+" + $("#url").val() + "\">class</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.google.com/search?q=community+" + $("#url").val() + "\">community</a></p>").fadeIn('slow');
+				$("#new_urls").append("Below are Youtube Searches with your term PLUS the linked word below");
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=podcast+" + $("#url").val() + "\">Podcast</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=review+" + $("#url").val() + "\">Review</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=tutorial+" + $("#url").val() + "\">Tutorial</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=expert+" + $("#url").val() + "\">Expert</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=help+" + $("#url").val() + "\">Help</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=blog+" + $("#url").val() + "\">blog</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=conference+" + $("#url").val() + "\">conference</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=workshop+" + $("#url").val() + "\">workshop</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=class+" + $("#url").val() + "\">class</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.youtube.com/results?search_query=community+" + $("#url").val() + "\">community</a></p>").fadeIn('slow');
+				$("#new_urls").append("Below are Flickr CC Searches with your term PLUS the linked word below");
 
-});
-});
-</script>
-	</head>
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=podcast+" + $("#url").val() + "&l=4\">Podcast</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=review+" + $("#url").val() + "&l=4\">Review</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=tutorial+" + $("#url").val() + "&l=4\">Tutorial</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=expert+" + $("#url").val() + "&l=4\">Expert</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=help+" + $("#url").val() + "&l=4\">Help</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=blog+" + $("#url").val() + "&l=4\">blog</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=conference+" + $("#url").val() + "&l=4\">conference</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=workshop+" + $("#url").val() + "&l=4\">workshop</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=class+" + $("#url").val() + "&l=4\">class</a></p>").fadeIn('slow');
+				$("#new_urls").append("<p><a href=\"http://www.flickr.com/search/?q=community+" + $("#url").val() + "&l=4\">community</a></p>").fadeIn('slow');
 
-	<body>
-    	<div id="container">
-        	<h1>Wonder Search</h1>
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<h1>Wonder Search</h1>
 		<div>by Newman Lanier with help from Phillip Whisenhunt</div>
-		
-	<p>&nbsp;</p>
-		
+
+		<p>&nbsp;</p>
+
 		<div id="search">
-        <input type="text" id="url" value="jQuery" /><input type="submit" id="button" />
-        </div>
+			<input type="text" id="url" value="jQuery" /><input type="submit" id="button" />
+		</div>
 
-<div id="new_urls">
+		<div id="new_urls">
 
-</div>
+		</div>
 
-	
 
-	</body>
+
+</body>
+
 </html>
